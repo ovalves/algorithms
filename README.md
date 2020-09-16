@@ -34,6 +34,17 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * `B` [Linear Search](src/algorithms/search/linear-search)
   * `B` [Binary Search](src/algorithms/search/binary-search) - pesquisar na matriz ordenada
 
+* **Ordenação**
+  * `B` [Bubble Sort](src/algorithms/sorting/bubble-sort/README.md)
+  * `B` [Selection Sort](src/algorithms/sorting/selection-sort/README.md)
+  * `B` [Insertion Sort](src/algorithms/sorting/insertion-sort)
+  * `B` [Shell Sort](src/algorithms/sorting/shell-sort/README.md)
+  * `B` [Merge Sort](src/algorithms/sorting/merge-sort/README.md)
+  * `B` [Quicksort](src/algorithms/sorting/quick-sort/README.md)
+
+* **Sem Categoria**
+  * `A` [Soma Recursiva](src/algorithms/uncategorized/recursive/README.md)
+
 ### Algoritmos por Paradigma
 
 Um paradigma algorítmico é um método ou abordagem genérica subjacente ao design de uma classe
@@ -46,9 +57,9 @@ algoritmo é uma abstração maior que um programa de computador.
 
 ### Referências
 
-[▶ Estruturas de dados e algoritmos no YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
+[Estruturas de dados e algoritmos no YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
 
-[▶ Estrutura de Dados e Algoritmos em JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.md)
+[Estrutura de Dados e Algoritmos em JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.md)
 
 ### Notação Big O
 
