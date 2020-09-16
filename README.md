@@ -20,7 +20,6 @@ valores, as relações entre eles e as funções ou operações que podem ser ap
 * `B` [Lista Encadeada (Linked List)](src/data-structures/linked-list/singly/README.md)
 * `B` [Lista Duplamente Ligada (Doubly Linked List)](src/data-structures/linked-list/doubly/README.md)
 * `B` [Fila (Queue)](src/data-structures/queue/README.md)
-* `B` [Stack](src/data-structures/stack/README.md)
 
 ## Algoritmos
 
@@ -31,7 +30,6 @@ um conjunto de regras que define precisamente uma sequência de operações.
 
 ### Algoritmos por Tópico
 * **Buscas**
-  * `B` [Linear Search](src/algorithms/search/linear-search)
   * `B` [Binary Search](src/algorithms/search/binary-search) - pesquisar na matriz ordenada
 
 * **Ordenação**
