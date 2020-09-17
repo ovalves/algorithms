@@ -14,6 +14,26 @@ Representação da ordenação com shell sort.
 ```
 ![Sorting](https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif)
 
+### Exemplo de código
+```python
+def shell_sort(lista):
+    sort_interval = len(lista) // 2
+
+    while sort_interval > 0:
+        for i in range(sort_interval, len(lista)):
+            temp = lista[i]
+            j = i
+            while j >= sort_interval and lista[j - sort_interval] > temp:
+                lista[j] = lista[j - sort_interval]
+                j -= sort_interval
+            lista[j] = temp
+        sort_interval //= 2
+
+    return lista
+
+shell_sort([12, 31, 5, 3, 0, 43, 99, 78, 32, 9, 7])
+```
+
 ```
 Visualização on-line
 ```

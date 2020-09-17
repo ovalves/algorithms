@@ -18,6 +18,23 @@ Exemplo da ordenação com bubble sort.
 ```
 ![Sorting_Example](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
+### Exemplo de código
+```python
+def bubble_sort(lista):
+    n = len(lista)
+
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if lista[j] > lista[j + 1]:
+                temp = lista[j]
+                lista[j] = lista[j + 1]
+                lista[j + 1] = temp
+
+    return lista
+
+bubble_sort([12, 31, 5, 3, 0, 43, 99, 78, 32, 9, 7])
+```
+
 ```
 Visualização on-line
 ```
