@@ -3,8 +3,7 @@
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/ovalves/algorithms/blob/master/LICENSE)
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
-Este repositório contém exemplos de muitos
-algoritmos e estruturas de dados populares.
+Este repositório contém algoritmos e estruturas de dados populares.
 
 Cada algoritmo e estrutura de dado possui seu próprio README
 com explicações relacionadas e links para leitura adicional
@@ -42,16 +41,6 @@ um conjunto de regras que define precisamente uma sequência de operações.
 
 * **Sem Categoria**
   * `A` [Soma Recursiva](src/algorithms/uncategorized/recursive/README.md)
-
-### Algoritmos por Paradigma
-
-Um paradigma algorítmico é um método ou abordagem genérica subjacente ao design de uma classe
-de algoritmos. É uma abstração maior do que a noção de um algoritmo, assim como
-algoritmo é uma abstração maior que um programa de computador.
-
-## Como usar este repositório
-
-## Informação útil
 
 ### Referências
 
