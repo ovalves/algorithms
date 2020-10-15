@@ -29,8 +29,11 @@ Esses **sistemas de recomendação** utiliza a similaridade entre os usuários d
 
 ### Exemplo de recomendação de filme
 1 - O **usuário 1** costuma dar **nota 5** para filmes de terror, e costuma dar **nota 3** para todos os outros tipos de filmes.
+
 2 - O **usuário 2** utiliza a mesma abordadem de avaliação que o **usuário 1**.
+
 3 - Para recomendar um novo filme para o **usuário 2**, o sistema de recomendação irá procurar na lista de filmes assistidos de todos os usuários do sistema.
+
 4 - Como o **usuário 1** e o **usuário 2** avaliam filmes de formas similares, ou seja, eles tem gosto similares, o sistema irá recomendar algum filme da lista do **usuário 1** para o **usuário 2**.
 
 ## Tipos de feedback em sistemas de recomendação
