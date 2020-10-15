@@ -28,8 +28,11 @@ um conjunto de regras que define precisamente uma sequência de operações.
 `B` - Iniciante, `A` - Avançado
 
 ### Algoritmos por Tópico
+* **Inteligência Artificil e Machine Learning**
+  * `A` [Sistemas de recomendação](src/machine-learning/recommender/README.md)
+
 * **Buscas**
-  * `B` [Binary Search](src/algorithms/search/binary-search) - pesquisar na matriz ordenada
+  * `B` [Binary Search](src/algorithms/search/binary-search)
 
 * **Ordenação**
   * `B` [Bubble Sort](src/algorithms/sorting/bubble-sort/README.md)
