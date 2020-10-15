@@ -8,7 +8,7 @@ Este repositório contém algoritmos e estruturas de dados populares.
 Cada algoritmo e estrutura de dado possui seu próprio README
 com explicações relacionadas e links para leitura adicional
 
-## Data Structures
+## Estruturas de dados
 
 Uma estrutura de dados é uma maneira particular de organizar e armazenar dados em um computador para que ele possa
 ser acessado e modificado de forma eficiente. Mais precisamente, uma estrutura de dados é uma coleção de dados
