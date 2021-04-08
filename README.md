@@ -17,8 +17,8 @@ valores, as relações entre eles e as funções ou operações que podem ser ap
 `B` - Iniciante, `A` - Avançado
 
 * `B` [Lista Encadeada (Linked List)](src/data-structures/linked-list/singly)
-* `B` [Lista Duplamente Ligada (Doubly Linked List)](src/data-structures/linked-list/doubly/README.md)
-* `B` [Fila (Queue)](src/data-structures/queue/README.md)
+* `B` [Lista Duplamente Ligada (Doubly Linked List)](src/data-structures/linked-list/doubly)
+* `B` [Fila (Queue)](src/data-structures/queue)
 
 ## Algoritmos
 
@@ -29,21 +29,21 @@ um conjunto de regras que define precisamente uma sequência de operações.
 
 ### Algoritmos por Tópico
 * **Inteligência Artificil e Machine Learning**
-  * `A` [Sistemas de recomendação](src/machine-learning/recommender/README.md)
+  * `A` [Sistemas de recomendação](src/machine-learning/recommender)
 
 * **Buscas**
   * `B` [Binary Search](src/algorithms/search/binary-search)
 
 * **Ordenação**
-  * `B` [Bubble Sort](src/algorithms/sorting/bubble-sort/README.md)
-  * `B` [Selection Sort](src/algorithms/sorting/selection-sort/README.md)
-  * `B` [Insertion Sort](src/algorithms/sorting/insertion-sort/README.md)
-  * `B` [Shell Sort](src/algorithms/sorting/shell-sort/README.md)
-  * `B` [Merge Sort](src/algorithms/sorting/merge-sort/README.md)
-  * `B` [Quicksort](src/algorithms/sorting/quick-sort/README.md)
+  * `B` [Bubble Sort](src/algorithms/sorting/bubble-sort)
+  * `B` [Selection Sort](src/algorithms/sorting/selection-sort)
+  * `B` [Insertion Sort](src/algorithms/sorting/insertion-sort)
+  * `B` [Shell Sort](src/algorithms/sorting/shell-sort)
+  * `B` [Merge Sort](src/algorithms/sorting/merge-sort)
+  * `B` [Quicksort](src/algorithms/sorting/quick-sort)
 
 * **Sem Categoria**
-  * `A` [Soma Recursiva](src/algorithms/uncategorized/recursive/README.md)
+  * `A` [Soma Recursiva](src/algorithms/uncategorized/recursive)
 
 ### Referências
 
