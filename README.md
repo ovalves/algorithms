@@ -16,7 +16,7 @@ valores, as relações entre eles e as funções ou operações que podem ser ap
 
 `B` - Iniciante, `A` - Avançado
 
-* `B` [Lista Encadeada (Linked List)](src/data-structures/linked-list/singly/README.md)
+* `B` [Lista Encadeada (Linked List)](src/data-structures/linked-list/singly)
 * `B` [Lista Duplamente Ligada (Doubly Linked List)](src/data-structures/linked-list/doubly/README.md)
 * `B` [Fila (Queue)](src/data-structures/queue/README.md)
 
