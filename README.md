@@ -31,6 +31,7 @@ um conjunto de regras que define precisamente uma sequência de operações.
 * **Inteligência Artificil e Machine Learning**
   * `A` [Sistemas de recomendação](src/machine-learning/recommender)
   * `A` [Algoritmos genéticos](src/artificial-intelligence/genetic-algorithms)
+  * `A` [Rede Neural - Perceptron de uma camada](src/artificial-intelligence/neural-network/single-layer)
 
 * **Buscas**
   * `B` [Binary Search](src/algorithms/search/binary-search)
