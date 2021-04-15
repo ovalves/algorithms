@@ -30,8 +30,9 @@ um conjunto de regras que define precisamente uma sequência de operações.
 ### Algoritmos por Tópico
 * **Inteligência Artificil e Machine Learning**
   * `A` [Sistemas de recomendação](src/machine-learning/recommender)
-  * `A` [Algoritmos genéticos](src/artificial-intelligence/genetic-algorithms)
   * `B` [Rede Neural - Perceptron de uma camada](src/artificial-intelligence/neural-network/single-layer)
+  * Algoritmos de Otimização
+    * `A` [Algoritmos genéticos](src/artificial-intelligence/genetic-algorithms)
 
 * **Buscas**
   * `B` [Binary Search](src/algorithms/search/binary-search)
