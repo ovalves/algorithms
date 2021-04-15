@@ -9,8 +9,8 @@ class Perceptron:
         self.stopTraining = False
         self.countErros = 0
 
-    def stepFunction(self, soma):
-        if (soma >= 1):
+    def stepFunction(self, output):
+        if (output >= 1):
             return 1
         return 0
 
