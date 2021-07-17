@@ -49,7 +49,8 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * `B` [Soma Recursiva](src/algorithms/uncategorized/recursive)
 
 * **Problemas**
-  * `B` [Median of Two Sorted Arrays](src/problems/median-of-two-sorted-arrays)
+  * `A` [Median of Two Sorted Arrays](src/problems/median-of-two-sorted-arrays)
+  * `B` [Reverse Integer](src/problems/reverse-integer)
 
 ### Referências
 
