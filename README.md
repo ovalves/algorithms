@@ -51,6 +51,7 @@ um conjunto de regras que define precisamente uma sequência de operações.
 * **Problemas**
   * `A` [Median of Two Sorted Arrays](src/problems/median-of-two-sorted-arrays)
   * `B` [Reverse Integer](src/problems/reverse-integer)
+  * `B` [Reverse Integer](src/problems/palindrome-number)
 
 ### Referências
 
