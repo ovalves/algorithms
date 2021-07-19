@@ -2,56 +2,54 @@
 
 class CompressedGene
 {
-    private int $bitString = 1;
-    private int $originalGeneLength;
     private string $originalString;
+    private array $bitStringArray = [];
+    private array $stringCompressedSize = [];
 
-    public function getCompressedSize()
+    public function getCompressedSize(): int
     {
-        return strlen($this->bitString) * 2;
+        return (int) array_sum($this->stringCompressedSize);
     }
 
-    public function getDecompressedString()
+    public function getDecompressedString(): string
     {
-        return $this->originalString;
+        return (string) $this->originalString;
     }
 
-    public function compress(string $gene)
+    public function compress(string $gene): void
     {
-        $this->originalGeneLength = (strlen($gene) * 2) - 2;
-        $genes = array_map('strtoupper', str_split($gene));
-        foreach ($genes as $nucleotide) {
-            $this->bitString <<= 2;  // shift left two bits
-            if ('A' == $nucleotide) {
-                $this->bitString |= 0b00; // change last two bits to 00
-            } elseif ('C' == $nucleotide) {
-                $this->bitString |= 0b01; // change last two bits to 01
-            } elseif ('G' == $nucleotide) {
-                $this->bitString |= 0b10; // change last two bits to 10
-            } elseif ('T' == $nucleotide) {
-                $this->bitString |= 0b11; // change last two bits to 11
-            } else {
-                throw new Exception("Invalid Nucleotide:{$nucleotide}");
+        $genes = array_map('strtoupper', str_split($gene, 32));
+
+        foreach ($genes as $key => $gene) {
+            $this->stringCompressedSize[$key] = (strlen($gene) * 2);
+            $this->bitStringArray[$key] = 1;
+            $gene = str_split($gene);
+
+            foreach ($gene as $nucleotide) {
+                $this->bitStringArray[$key] <<= 2;
+                $this->bitStringArray[$key] |= match ($nucleotide) {
+                    'C' => 0b01,
+                    'G' => 0b10,
+                    'T' => 0b11,
+                    'A' => 0b00,
+                };
             }
         }
     }
 
-    public function decompress()
+    public function decompress(): void
     {
         $this->originalString = '';
 
-        foreach (range(0, $this->originalGeneLength, 2) as $value) {
-            $bits = $this->bitString >> $value & 0b11;  // get just 2 relevant bits
-            if (0b00 == $bits) {
-                $this->originalString .= 'A'; // A
-            } elseif (0b01 == $bits) {
-                $this->originalString .= 'C'; // C
-            } elseif (0b10 == $bits) {
-                $this->originalString .= 'G'; // G
-            } elseif (0b11 == $bits) {
-                $this->originalString .= 'T';  // T
-            } else {
-                throw new Exception("Invalid bits {$bits}");
+        foreach ($this->bitStringArray as $key => $bitString) {
+            foreach (range(0, $this->stringCompressedSize[$key] - 2, 2) as $value) {
+                $bits = $bitString >> $value & 0b11;  // get just 2 relevant bits
+                $this->originalString .= match ($bits) {
+                    0b01 => 'C',
+                    0b10 => 'G',
+                    0b11 => 'T',
+                    0b00 => 'A',
+                };
             }
         }
 
@@ -60,8 +58,8 @@ class CompressedGene
 }
 
 $original = str_repeat(
-    'ACTG',
-    8
+    'ACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTG',
+    115
 );
 
 $compress = new CompressedGene();
