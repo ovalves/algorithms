@@ -43,7 +43,7 @@ class CompressedGene
 
         foreach ($this->bitStringArray as $key => $bitString) {
             foreach (range(0, $this->stringCompressedSize[$key] - 2, 2) as $value) {
-                $bits = $bitString >> $value & 0b11;  // get just 2 relevant bits
+                $bits = $bitString >> $value & 0b11;
                 $this->originalString .= match ($bits) {
                     0b01 => 'C',
                     0b10 => 'G',
@@ -57,25 +57,27 @@ class CompressedGene
     }
 }
 
+/* ====================================================== */
+$compress = new CompressedGene();
+
+// Original String
 $original = str_repeat(
     'ACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTG',
     115
 );
-
-$compress = new CompressedGene();
-
 $originalSize = strlen($original) * 8;
 echo "original size is: {$originalSize} bytes | original content is: {$original}\n";
 
+// Compress Original String
 $compress->compress($original);
 $compressedSize = $compress->getCompressedSize();  // get compressed string
-
 echo "compressed size is: {$compressedSize} bytes\n";
 
+// Decompress
 $compress->decompress();
-
 $decompressed = $compress->getDecompressedString();
+echo $decompressed . "\n";
 
-echo "original and decompressed are the same? \n";
-var_dump($original == $decompressed);
-var_dump($decompressed);
+// Compare Original <> Decompressed
+$same = ($original == $decompressed) ? 'YES' : 'NO';
+echo "original and decompressed are the same? {$same}";
