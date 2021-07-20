@@ -53,6 +53,7 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * `B` [Reverse Integer](src/problems/reverse-integer)
   * `B` [Palindrome Number](src/problems/palindrome-number)
   * `A` [Gene Compression](src/problems/gene-compression)
+  * `B` [Leibniz π](src/problems/calculating-pi)
 
 ### Referências
 
