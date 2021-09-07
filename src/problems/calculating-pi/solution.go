@@ -18,5 +18,5 @@ func calculatePI(terms int) float64 {
 
 func main() {
 	res := calculatePI(100000)
-    fmt.Printf("Resultado: %f", res)
+	fmt.Printf("Resultado: %f", res)
 }
