@@ -54,7 +54,8 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * `B` [Palindrome Number](src/problems/palindrome-number)
   * `A` [Gene Compression](src/problems/gene-compression)
   * `B` [Leibniz π](src/problems/calculating-pi)
-  * `B` [One-time pad](src/problems/one-time-pad)
+  * `B` [One time pad](src/problems/one-time-pad)
+  * `B` [Roman to Integer](src/problems/roman-to-integer)
 
 ### Referências
 
