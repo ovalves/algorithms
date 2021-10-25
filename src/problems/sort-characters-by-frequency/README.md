@@ -1,7 +1,7 @@
 Sort characters by frequency
 ====
 
-> Site [LeetCode](https://leetcode.com/problems/rsort-characters-by-frequency/)
+> Site [LeetCode](https://leetcode.com/problems/sort-characters-by-frequency/)
 
 > Level Medium
 
