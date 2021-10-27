@@ -39,9 +39,9 @@ Output: [1]
 
 Constraints:
 
-    n == nums.length
-    1 <= n <= 300
-    nums[i] is 0, 1, or 2.
+- n == nums.length
+- 1 <= n <= 300
+- nums[i] is 0, 1, or 2.
 
 ## Solution
 > Language: PHP
