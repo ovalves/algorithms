@@ -35,25 +35,25 @@ echo (new Solution)->reverseWords('  hello world  ') . PHP_EOL;
  *
  * blue is sky the
  */
- echo (new Solution)->reverseWords('the sky is blue') . PHP_EOL;
+echo (new Solution)->reverseWords('the sky is blue') . PHP_EOL;
 
 /**
  * Resultado:
  *
  * example good a
  */
- echo (new Solution)->reverseWords('a good   example') . PHP_EOL;
+echo (new Solution)->reverseWords('a good   example') . PHP_EOL;
 
 /**
  * Resultado:
  *
  * Alice Loves Bob
  */
- echo (new Solution)->reverseWords('  Bob    Loves  Alice   ') . PHP_EOL;
+echo (new Solution)->reverseWords('  Bob    Loves  Alice   ') . PHP_EOL;
 
 /**
  * Resultado:
  *
  * bob like even not does Alice
  */
- echo (new Solution)->reverseWords('Alice does not even like bob') . PHP_EOL;
+echo (new Solution)->reverseWords('Alice does not even like bob') . PHP_EOL;
