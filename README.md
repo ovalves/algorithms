@@ -56,6 +56,10 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * `B` [Leibniz π](src/problems/calculating-pi)
   * `B` [One time pad](src/problems/one-time-pad)
   * `B` [Roman to Integer](src/problems/roman-to-integer)
+  * `B` [Sort Colors](src/problems/sort-colors)
+  * `B` [Sort Characters By Frequency](src/problems/sort-characters-by-frequency)
+  * `B` [Reverse Words In a String](src/problems/reverse-words-in-a-string)
+  * `B` [Min Stack](src/problems/min-stack)
 
 ### Referências
 
