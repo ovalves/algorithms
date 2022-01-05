@@ -57,7 +57,6 @@ class MinStack
  * $ret_3 = $obj->top();
  * $ret_4 = $obj->getMin();
  */
-
 $minStack = new MinStack();
 $minStack->push(-2);
 $minStack->push(0);
