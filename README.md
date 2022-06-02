@@ -59,7 +59,7 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * `B` [Sort Characters By Frequency](src/problems/sort-characters-by-frequency)
   * `B` [Reverse Words In a String](src/problems/reverse-words-in-a-string)
   * `B` [Min Stack](src/problems/min-stack)
-  * `B` [Min Stack](src/problemstranspose-matrix)
+  * `B` [Transpose Matrix](src/problems/transpose-matrix)
 
 ### Referências
 
