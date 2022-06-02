@@ -2,7 +2,6 @@
 
 class Solution
 {
-
     /**
      * @param array $nums
      * @param int $target
@@ -11,7 +10,7 @@ class Solution
     public function twoSum(array $nums, int $target): array
     {
         $len = count($nums);
-        if (count($nums) <= 2) {
+        if ($len <= 2) {
             return array_keys($nums);
         }
 
