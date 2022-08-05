@@ -46,6 +46,24 @@ Constraints:
 - 0 <= prices[i] <= 104
 
 ## Solution
+> Language: Go -> Easy Approach
+
+```go
+// prices := []int{3, 11, 5, 10, 3}
+// maxProfit(prices) -> result: 13
+func maxProfit(prices []int) int {
+	profit := 0
+	for i := 1; i < len(prices); i++ {
+		fmt.Println(prices[i], prices[i-1])
+		if prices[i] > prices[i-1] {
+			profit += prices[i] - prices[i-1]
+		}
+	}
+
+	return profit
+}
+```
+
 > Language: Go
 
 ```go

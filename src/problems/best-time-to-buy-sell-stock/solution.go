@@ -9,7 +9,7 @@ func main() {
 	// prices := []int{1}
 
 	// result: 1
-	prices := []int{1, 2}
+	// prices := []int{1, 2}
 
 	// result: 7
 	// prices := []int{7, 1, 5, 3, 6, 4}
@@ -30,7 +30,7 @@ func main() {
 	// prices := []int{3, 11, 7, 10, 3}
 
 	// result: 13
-	// prices := []int{3, 11, 5, 10, 3}
+	prices := []int{3, 11, 5, 10, 3}
 
 	// result: 0
 	// prices := []int{0, 0, 0, 0, 0}
@@ -38,7 +38,7 @@ func main() {
 	// result: 0
 	// prices := []int{2, 0, 0, 0, 0}
 
-	profit := maxProfit(prices)
+	profit := easyMaxProfit(prices)
 
 	fmt.Println("Profit: ", profit)
 }
@@ -63,6 +63,18 @@ func maxProfit(prices []int) int {
 			profit += sell
 			break
 
+		}
+	}
+
+	return profit
+}
+
+func easyMaxProfit(prices []int) int {
+	profit := 0
+	for i := 1; i < len(prices); i++ {
+		fmt.Println(prices[i], prices[i-1])
+		if prices[i] > prices[i-1] {
+			profit += prices[i] - prices[i-1]
 		}
 	}
 
