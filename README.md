@@ -65,6 +65,26 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * `A` [Combination Sum IV](src/problems/combination-sum-iv)
   * `B` [Fibonacci](src/problems/fibonacci/solution.go)
 
+## Técnicas usadas
+
+### Recursão
+A recursão, em particular, está no coração não só de vários algoritmos, mas até mesmo em linguagens de programação completas.
+
+Em algumas linguagens de programação funcional, como Scheme e Haskell, a recursão substitui os laços usados nas linguagens imperativas. Contudo, vale a pena lembrar que tudo que pode ser feito com uma técnica recursiva também pode sê-lo com uma técnica iterativa.
+
+
+### Memoização
+A memoização tem sido aplicada com sucesso para agilizar o trabalho dos parsers (programas que interpretam linguagens). É útil para todos os problemas nos quais o resultado de um cálculo recente será provavelmente solicitado de novo.
+
+Outra aplicação da memoização está nos runtimes de linguagens. Alguns runtimes de linguagens (versões de Prolog, por exemplo) armazenam os resultados das chamadas de funções automaticamente (automemoização), de modo que a função não precisará executar da próxima vez que a mesma chamada for feita.
+
+### Compactação
+A compactação tem feito com que um mundo conectado pela internet com limitações de largura de banda seja mais tolerável.
+
+A técnica de cadeia de bits pode ser usada para tipos de dados simples do mundo real que tenham um número limitado de valores possíveis, para os quais mesmo um byte poderia ser um exagero.
+
+A maioria dos algoritmos de compactação, porém, atua encontrando padrões ou estruturas em um conjunto de dados, os quais permitem que informações repetidas sejam eliminadas.
+
 ### Referências
 
 [Estruturas de dados e algoritmos no YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
