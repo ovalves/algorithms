@@ -63,6 +63,7 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * `B` [Two Sum](src/problems/two-sum)
   * `A` [Best Time to Buy and Sell Stock II](src/problems/best-time-to-buy-sell-stock)
   * `A` [Combination Sum IV](src/problems/combination-sum-iv)
+  * `B` [Fibonacci](src/problems/fibonacci/solution.go)
 
 ### Referências
 
