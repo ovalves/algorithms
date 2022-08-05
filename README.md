@@ -60,6 +60,8 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * `B` [Reverse Words In a String](src/problems/reverse-words-in-a-string)
   * `B` [Min Stack](src/problems/min-stack)
   * `B` [Transpose Matrix](src/problems/transpose-matrix)
+  * `B` [Two Sum](src/problems/two-sum)
+  * `A` [Best Time to Buy and Sell Stock II](src/problems/best-time-to-buy-sell-stock)
 
 ### Referências
 
