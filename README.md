@@ -27,6 +27,8 @@ um conjunto de regras que define precisamente uma sequência de operações.
 `B` - Iniciante, `A` - Avançado
 
 ### Algoritmos por Tópico
+* **Architecture**
+  * `A` [Exponential Backoff and jitter](src/architecture/exponential-backoff-and-jitter)
 * **Inteligência Artificil e Machine Learning**
   * `A` [Sistemas de recomendação](src/machine-learning/recommender)
   * `B` [Rede Neural - Perceptron de uma camada](src/artificial-intelligence/neural-network/single-layer)
