@@ -34,4 +34,3 @@ def simulate_service_call(service: callable, name: str = 'A', initial_timeout: i
         print(f"Error: {str(e)} -> Added Backoff timeout")
 
 simulate_service_call(service=sample_service, name='A', initial_timeout=0, backoff_alg=backoff_with_jitter)
-# simulate_service_call(service=sample_service, name='Service B', initial_timeout=0, backoff_alg=backoff)
