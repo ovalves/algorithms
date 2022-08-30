@@ -12,4 +12,5 @@ def insertion_sort(lista):
 
     return lista
 
-insertion_sort([12, 31, 5, 3, 0, 43, 99, 78, 32, 9, 7])
+numbers = [12, 31, 5, 3, 0, 43, 99, 78, 32, 9, 7]
+print(f"Sorted: {insertion_sort(numbers)}")

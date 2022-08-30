@@ -13,4 +13,5 @@ def selection_sort(lista):
 
     return lista
 
-print(selection_sort([12, 31, 5, 3, 0, 43, 99, 78, 32, 9, 7]))
+numbers = [12, 31, 5, 3, 0, 43, 99, 78, 32, 9, 7]
+print(f"Sorted: {selection_sort(numbers)}")
