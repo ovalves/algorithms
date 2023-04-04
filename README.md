@@ -87,11 +87,6 @@ A técnica de cadeia de bits pode ser usada para tipos de dados simples do mundo
 
 A maioria dos algoritmos de compactação, porém, atua encontrando padrões ou estruturas em um conjunto de dados, os quais permitem que informações repetidas sejam eliminadas.
 
-### Referências
-
-[Estruturas de dados e algoritmos no YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
-
-[Estrutura de Dados e Algoritmos em JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.md)
 
 ### Notação Big O
 
@@ -104,43 +99,48 @@ Ordem de crescimento dos algoritmos especificados em notação Big O
 
 Fonte: [Notação Big-O dicas](http://bigocheatsheet.com/).
 
-Abaixo está a lista de algumas das notações Big O mais usadas e suas comparações de desempenho em relação aos diferentes tamanhos dos dados de entrada.
+### Notações Big O mais usadas e comparação de desempenho em relação aos diferentes tamanhos dos dados de entrada.
 
-| Notação Big-O  | Cálculos para 10 elementos   | Cálculos para 100 elementos   | Cálculos para 1000 elementos    |
-| -------------- | ---------------------------- | ----------------------------- | ------------------------------- |
-| **O(1)**       | 1                            | 1                             | 1                               |
-| **O(log N)**   | 3                            | 6                             | 9                               |
-| **O(N)**       | 10                           | 100                           | 1000                            |
-| **O(N log N)** | 30                           | 600                           | 9000                            |
-| **O(N^2)**     | 100                          | 10000                         | 1000000                         |
-| **O(2^N)**     | 1024                         | 1.26e+29                      | 1.07e+301                       |
-| **O(N!)**      | 3628800                      | 9.3e+157                      | 4.02e+2567                      |
+| Notação Big-O         | Nome         | Calc. 10 itens | Calc. 100 itens | Calc. 1000 itens |
+| --------------------- | ------------ | -------------- | --------------- | -----------------|
+| **O(1)**              | Constant     | 1              | 1               | 1                |
+| **O(log n)**          | Logarithmic  | 3              | 6               | 9                |
+| **O(n)**              | Linear       | 10             | 100             | 1000             |
+| **O(n * log(n))**     | Linearithmic | 30             | 600             | 9000             |
+| **O(n<sup>2</sup>)**  | Quadratic    | 100            | 10000           | 1000000          |
+| **O(2<sup>n</sup>)**  | Exponential  | 1024           | 1.26e+29        | 1.07e+301        |
+| **O(n!)**             | Factorial    | 3628800        | 9.3e+157        | 4.02e+2567       |
 
-### Complexidade de operações de estrutura de dados
+### Complexidade de operações em estrutura de dados
 
-| estrutura de dados      | Acesso    | Busca     | Inserção  | Eliminação | comentários |
-| ----------------------- | :-------: | :-------: | :-------: | :-------:  | :--------   |
-| **Array**               | 1         | n         | n         | n          |             |
-| **Stack**               | n         | n         | 1         | 1          |             |
-| **Queue**               | n         | n         | 1         | 1          |             |
-| **Linked List**         | n         | n         | 1         | 1          |             |
-| **Hash Table**          | -         | n         | n         | n          | Em caso de uma função hash perfeita, os custos seriam O (1) |
-| **Binary Search Tree**  | n         | n         | n         | n          | No caso de custos de árvore equilibrados seria O (log (n))
-| **B-Tree**              | log(n)    | log(n)    | log(n)    | log(n)     |             |
-| **Red-Black Tree**      | log(n)    | log(n)    | log(n)    | log(n)     |             |
-| **AVL Tree**            | log(n)    | log(n)    | log(n)    | log(n)     |             |
-| **Bloom Filter**        | -         | 1         | 1         | -          | Falsos positivos são possíveis durante a pesquisa |
+| estrutura de dados      | Acesso    | Busca     | Inserção  | Deleção   |
+| ----------------------- | --------- | --------- | --------- | --------- |
+| **Array**               | O(1)      | O(n)      | O(n)      | O(n)      |
+| **Stack**               | O(n)      | O(n)      | O(1)      | O(1)      |
+| **Queue**               | O(n)      | O(n)      | O(1)      | O(1)      |
+| **Linked List**         | O(n)      | O(n)      | O(1)      | O(1)      |
+| **Hash Table**          | -         | O(n)      | O(n)      | O(n)      |
+| **Binary Search Tree**  | O(n)      | O(n)      | O(n)      | O(n)      |
+| **B-Tree**              | O(log(n)) | O(log(n)) | O(log(n)) | O(log(n)) |
+| **Red-Black Tree**      | O(log(n)) | O(log(n)) | O(log(n)) | O(log(n)) |
+| **AVL Tree**            | O(log(n)) | O(log(n)) | O(log(n)) | O(log(n)) |
+| **Bloom Filter**        | -         | O(1)      | O(1)      | -         |
 
-### Array Sorting Algorithms Complexity
+### Complexidade dos algoritmos para Ordenação de Array
 
-| Nome                  | Melhor          | Média               | Pior                | Mémoria   | Estável   | comentários |
-| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :--------   |
-| **Bubble sort**       | n               | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Sim       |             |
-| **Insertion sort**    | n               | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Sim       |             |
-| **Selection sort**    | n<sup>2</sup>   | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Não       |             |
-| **Heap sort**         | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | 1         | Não       |             |
-| **Merge sort**        | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | n         | Sim       |             |
-| **Quick sort**        | n&nbsp;log(n)   | n&nbsp;log(n)       | n<sup>2</sup>       | log(n)    | Não       | O Quicksort geralmente é feito no local com o espaço de pilha O  O(log(n)) stack space |
-| **Shell sort**        | n&nbsp;log(n)   | depende da sequência de lacunas | n&nbsp;(log(n))<sup>2</sup>     | 1      | Não    |                   |
-| **Counting sort**     | n + r           | n + r               | n + r               | n + r     | Sim       | r - maior número na matriz          |
-| **Radix sort**        | n * k           | n * k               | n * k               | n + k     | Sim       | k - comprimento da chave mais longa |
+| Nome                  | Melhor Cenário   | Cenário OK                      | Pior Cenário              | Mémoria   | Estável |
+| --------------------- | ---------------- | ------------------------------- | ------------------------  | --------- | ------- |
+| **Bubble sort**       | O(n)             | O(n<sup>2</sup>)                | O(n<sup>2</sup>)          | 1         | Sim     |
+| **Insertion sort**    | O(n)             | O(n<sup>2</sup>)                | O(n<sup>2</sup>)          | 1         | Sim     |
+| **Selection sort**    | O(n<sup>2</sup>) | O(n<sup>2</sup>)                | O(n<sup>2</sup>)          | 1         | Não     |
+| **Heap sort**         | O(n log(n))      | O(n log(n))                     | O(n log(n))               | 1         | Não     |
+| **Merge sort**        | O(n log(n))      | O(n log(n))                     | O(n log(n))               | n         | Sim     |
+| **Quick sort**        | O(n log(n))      | O(n log(n))                     | O(n<sup>2</sup>)          | log(n)    | Não     |
+| **Shell sort**        | O(n log(n))      | depende da sequência de lacunas | O(n (log(n))<sup>2</sup>) | 1         | Não     |
+| **Counting sort**     | O(n + r)         | O(n + r)                        | O(n + r)                  | n + r     | Sim     |
+| **Radix sort**        | O(n * k)         | O(n * k)                        | O(n * k)                  | n + k     | Sim     |
+
+### Referências
+
+- [Estruturas de dados e algoritmos no YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
+- [Estrutura de Dados e Algoritmos em JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.md)
