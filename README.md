@@ -75,10 +75,10 @@ A recursão, em particular, está no coração não só de vários algoritmos, m
 Em algumas linguagens de programação funcional, como Scheme e Haskell, a recursão substitui os laços usados nas linguagens imperativas. Contudo, vale a pena lembrar que tudo que pode ser feito com uma técnica recursiva também pode sê-lo com uma técnica iterativa.
 
 
-### Memoização
-A memoização tem sido aplicada com sucesso para agilizar o trabalho dos parsers (programas que interpretam linguagens). É útil para todos os problemas nos quais o resultado de um cálculo recente será provavelmente solicitado de novo.
+### Memoization
+A memoization tem sido aplicada com sucesso para agilizar o trabalho dos parsers (programas que interpretam linguagens). É útil para todos os problemas nos quais o resultado de um cálculo recente será provavelmente solicitado de novo.
 
-Outra aplicação da memoização está nos runtimes de linguagens. Alguns runtimes de linguagens (versões de Prolog, por exemplo) armazenam os resultados das chamadas de funções automaticamente (automemoização), de modo que a função não precisará executar da próxima vez que a mesma chamada for feita.
+Outra aplicação da memoization está nos runtimes de linguagens. Alguns runtimes de linguagens (versões de Prolog, por exemplo) armazenam os resultados das chamadas de funções automaticamente (automemoization), de modo que a função não precisará executar da próxima vez que a mesma chamada for feita.
 
 ### Compactação
 A compactação tem feito com que um mundo conectado pela internet com limitações de largura de banda seja mais tolerável.
@@ -87,10 +87,9 @@ A técnica de cadeia de bits pode ser usada para tipos de dados simples do mundo
 
 A maioria dos algoritmos de compactação, porém, atua encontrando padrões ou estruturas em um conjunto de dados, os quais permitem que informações repetidas sejam eliminadas.
 
+## Big O
 
-### Notação Big O
-
-* Usado para realizar a comparação objetiva entre algoritimos
+* Usado para realizar a comparação objetiva entre algorítimos
 * O quanto a "complexidade"do algoritmo aumenta de acordo com as entradas
 
 Ordem de crescimento dos algoritmos especificados em notação Big O
@@ -140,7 +139,82 @@ Fonte: [Notação Big-O dicas](http://bigocheatsheet.com/).
 | **Counting sort**     | O(n + r)         | O(n + r)                        | O(n + r)                  | n + r     | Sim     |
 | **Radix sort**        | O(n * k)         | O(n * k)                        | O(n * k)                  | n + k     | Sim     |
 
+## Latency numbers every programmer should know
+
+```
+Latency Comparison Numbers
+--------------------------
+L1 cache reference                           0.5 ns
+Branch mispredict                            5   ns
+L2 cache reference                           7   ns                      14x L1 cache
+Mutex lock/unlock                           25   ns
+Main memory reference                      100   ns                      20x L2 cache, 200x L1 cache
+Compress 1K bytes with Zippy            10,000   ns       10 us
+Send 1 KB bytes over 1 Gbps network     10,000   ns       10 us
+Read 4 KB randomly from SSD*           150,000   ns      150 us          ~1GB/sec SSD
+Read 1 MB sequentially from memory     250,000   ns      250 us
+Round trip within same datacenter      500,000   ns      500 us
+Read 1 MB sequentially from SSD*     1,000,000   ns    1,000 us    1 ms  ~1GB/sec SSD, 4X memory
+HDD seek                            10,000,000   ns   10,000 us   10 ms  20x datacenter roundtrip
+Read 1 MB sequentially from 1 Gbps  10,000,000   ns   10,000 us   10 ms  40x memory, 10X SSD
+Read 1 MB sequentially from HDD     30,000,000   ns   30,000 us   30 ms 120x memory, 30X SSD
+Send packet CA->Netherlands->CA    150,000,000   ns  150,000 us  150 ms
+
+Notes
+-----
+1 ns = 10^-9 seconds
+1 us = 10^-6 seconds = 1,000 ns
+1 ms = 10^-3 seconds = 1,000 us = 1,000,000 ns
+```
+
+Handy metrics based on numbers above:
+
+* Read sequentially from HDD at 30 MB/s
+* Read sequentially from 1 Gbps Ethernet at 100 MB/s
+* Read sequentially from SSD at 1 GB/s
+* Read sequentially from main memory at 4 GB/s
+* 6-7 world-wide round trips per second
+* 2,000 round trips per second within a data center
+
+### Latency numbers visualized
+
+![](assets/latency_numbers.png)
+
+## Técnicas para resolução de problemas
+- When you got the problem, write down the key points at the top (i.e. sorted array). Make sure you have all the details.
+- Make sure you double check: What are the inputs? What are the outputs?
+- What is the most important value of the problem? Do you have time, and space and memory, etc.. What is the main goal?
+- Start with the naive/brute force approach. First thing that comes into mind. It shows that you’re able to think well and critically (you don't need to write this code, just speak about it)
+- Tell them why this approach is not the best (i.e. O(n^2) or higher, not readable, etc...)
+- Start actually writing your code now. Keep in mind that the more you prepare and understand
+what you need to code, the better the whiteboard will go. So never start a whiteboard
+interview not being sure of how things are going to work out. That is a recipe for disaster.
+- Test your code: Check for no params, 0, undefined, null, massive arrays, async code, etc
+
+## Good code checklist:
+- [✅] It works
+- [✅] Good use of data structures
+- [✅] Code Re-use/ Do Not Repeat Yourself
+- [✅] Modular - makes code more readable, maintainable and testable
+- [✅] Less than O(N^2). We want to avoid nested loops if we can since they are expensive. Two separate loops are better than 2 nested loops
+- [✅] Low Space Complexity --> Recursion can cause stack overflow, copying of large arrays may
+exceed memory of machine
+
+## Heurestics to solve coding problems:
+- [✅] Hash Maps are usually the answer to improve Time Complexity
+- [✅] If it's a sorted array, use Binary tree to achieve O(log N). Divide and Conquer - Divide a data set
+into smaller chunks and then repeating a process with a subset of data. Binary search is a great example of this
+- [✅] Try Sorting your input
+- [✅] Hash tables and precomputed information (i.e. sorted) are some of the best ways to optimize your code
+- [✅] Look at the Time vs Space tradeoff. Sometimes storing extra state in memory can help the time.
+- [✅] Space time tradeoffs: Hashtables usually solve this a lot of the times. You use more space, but you
+can get a time optimization to the process. In programming, you often times can use up a little bit more space to get faster time
+
+
 ### Referências
 
+- [System design primer](https://github.com/donnemartin/system-design-primer)
 - [Estruturas de dados e algoritmos no YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
 - [Estrutura de Dados e Algoritmos em JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.md)
+- [Latency numbers every programmer should know](https://gist.github.com/hellerbarde/2843375)
+>>>>>>> Stashed changes
