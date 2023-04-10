@@ -1,6 +1,6 @@
 # Estrutura de Dados e Algoritmos
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/ovalves/algorithms/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/github/license/ovalves/algorithms)](https://github.com/ovalves/algorithms/blob/main/LICENSE)
 
 Este repositório contém algoritmos e estruturas de dados populares.
 
@@ -15,8 +15,8 @@ valores, as relações entre eles e as funções ou operações que podem ser ap
 
 * [Arrays](src/data-structures/array)
 * [Hash Table](src/data-structures/hashtables)
-* [Lista Encadeada (Linked List)](src/data-structures/lists/linked-list/singly)
-* [Lista Duplamente Ligada (Doubly Linked List)](src/data-structures/lists/linked-list/doubly)
+* [Linked List](src/data-structures/lists/linked-list/singly)
+* [Doubly Linked List](src/data-structures/lists/linked-list/doubly)
 * [Queue](src/data-structures/queue)
 
 ## Algoritmos
