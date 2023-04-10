@@ -13,59 +13,58 @@ Uma estrutura de dados é uma maneira particular de organizar e armazenar dados 
 ser acessado e modificado de forma eficiente. Mais precisamente, uma estrutura de dados é uma coleção de dados
 valores, as relações entre eles e as funções ou operações que podem ser aplicadas aos dados.
 
-`B` - Iniciante, `A` - Avançado
-
-* `B` [Lista Encadeada (Linked List)](src/data-structures/linked-list/singly)
-* `B` [Lista Duplamente Ligada (Doubly Linked List)](src/data-structures/linked-list/doubly)
-* `B` [Fila (Queue)](src/data-structures/queue)
+* [Arrays](src/data-structures/array)
+* [Hash Table](src/data-structures/hashtables)
+* [Lista Encadeada (Linked List)](src/data-structures/lists/linked-list/singly)
+* [Lista Duplamente Ligada (Doubly Linked List)](src/data-structures/lists/linked-list/doubly)
+* [Queue](src/data-structures/queue)
 
 ## Algoritmos
 
 Um algoritmo é uma especificação inequívoca de como resolver uma classe de problemas. Isto é
 um conjunto de regras que define precisamente uma sequência de operações.
 
-`B` - Iniciante, `A` - Avançado
-
 ### Algoritmos por Tópico
 * **Architecture**
-  * `A` [Exponential Backoff and jitter](src/architecture/exponential-backoff-and-jitter)
+  * [Exponential Backoff and jitter](src/architecture/exponential-backoff-and-jitter)
 * **Inteligência Artificil e Machine Learning**
-  * `A` [Sistemas de recomendação](src/machine-learning/recommender)
-  * `B` [Rede Neural - Perceptron de uma camada](src/artificial-intelligence/neural-network/single-layer)
+  * [Sistemas de recomendação](src/ml-ia/ml/recommender)
+  * [Rede Neural - Perceptron de uma camada](src/ml-ia/ia/neural-network/single-layer)
   * Algoritmos de Otimização
-    * `A` [Algoritmos genéticos](src/artificial-intelligence/genetic-algorithms)
+    * [Algoritmos genéticos](src/ml-ia/ia/genetic-algorithms)
 
 * **Buscas**
-  * `B` [Binary Search](src/algorithms/search/binary-search)
+  * [Binary Search](src/algorithms/search/binary-search)
 
 * **Ordenação**
-  * `B` [Bubble Sort](src/algorithms/sorting/bubble-sort)
-  * `B` [Selection Sort](src/algorithms/sorting/selection-sort)
-  * `B` [Insertion Sort](src/algorithms/sorting/insertion-sort)
-  * `B` [Shell Sort](src/algorithms/sorting/shell-sort)
-  * `B` [Merge Sort](src/algorithms/sorting/merge-sort)
-  * `B` [Quicksort](src/algorithms/sorting/quick-sort)
-
-* **Sem Categoria**
-  * `B` [Soma Recursiva](src/algorithms/uncategorized/recursive)
+  * [Bubble Sort](src/algorithms/sorting/bubble-sort)
+  * [Selection Sort](src/algorithms/sorting/selection-sort)
+  * [Insertion Sort](src/algorithms/sorting/insertion-sort)
+  * [Shell Sort](src/algorithms/sorting/shell-sort)
+  * [Merge Sort](src/algorithms/sorting/merge-sort)
+  * [Quicksort](src/algorithms/sorting/quick-sort)
 
 * **Problemas**
-  * `A` [Median of Two Sorted Arrays](src/problems/median-of-two-sorted-arrays)
-  * `B` [Reverse Integer](src/problems/reverse-integer)
-  * `B` [Palindrome Number](src/problems/palindrome-number)
-  * `A` [Gene Compression](src/problems/gene-compression)
-  * `B` [Leibniz π](src/problems/calculating-pi)
-  * `B` [One time pad](src/problems/one-time-pad)
-  * `B` [Roman to Integer](src/problems/roman-to-integer)
-  * `B` [Sort Colors](src/problems/sort-colors)
-  * `B` [Sort Characters By Frequency](src/problems/sort-characters-by-frequency)
-  * `B` [Reverse Words In a String](src/problems/reverse-words-in-a-string)
-  * `B` [Min Stack](src/problems/min-stack)
-  * `B` [Transpose Matrix](src/problems/transpose-matrix)
-  * `B` [Two Sum](src/problems/two-sum)
-  * `A` [Best Time to Buy and Sell Stock II](src/problems/best-time-to-buy-sell-stock)
-  * `A` [Combination Sum IV](src/problems/combination-sum-iv)
-  * `B` [Fibonacci](src/problems/fibonacci/solution.go)
+  * [Median of Two Sorted Arrays](src/problems/median-of-two-sorted-arrays)
+  * [Reverse Integer](src/problems/reverse-integer)
+  * [Palindrome Number](src/problems/palindrome-number)
+  * [Soma Recursiva](src/problems/recursive-sum)
+  * [Gene Compression](src/problems/gene-compression)
+  * [Leibniz π](src/problems/calculating-pi)
+  * [One time pad](src/problems/one-time-pad)
+  * [Roman to Integer](src/problems/roman-to-integer)
+  * [Sort Colors](src/problems/sort-colors)
+  * [Sort Characters By Frequency](src/problems/sort-characters-by-frequency)
+  * [Reverse Words In a String](src/problems/reverse-words-in-a-string)
+  * [Min Stack](src/problems/min-stack)
+  * [Transpose Matrix](src/problems/transpose-matrix)
+  * [Two Sum](src/problems/two-sum)
+  * [Best Time to Buy and Sell Stock II](src/problems/best-time-to-buy-sell-stock)
+  * [Combination Sum IV](src/problems/combination-sum-iv)
+  * [Fibonacci](src/problems/fibonacci/solution.go)
+  * [Contains Duplicate](src/problems/contains-duplicate)
+  * [Move Zeroes](src/problems/move-zeroes)
+  * [Rotate Array](src/problems/rotate-array)
 
 ## Técnicas usadas
 

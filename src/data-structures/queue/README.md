@@ -15,7 +15,7 @@ anteriormente devem ser removidos antes que o novo elemento possa ser removido.
 Muitas vezes uma espiada (peek) ou uma operação de frente é iniciada,
 retornando o valor do elemento da frente, sem desenfileira-lo. Uma lista é
 um exemplo de uma estrutura de dados linear, ou mais abstratamente uma
-coleção seqüencial.
+coleção sequencial.
 
 
 Representação de uma file FIFO (first in, first out)
