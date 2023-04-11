@@ -1,4 +1,4 @@
-# Fila (Queue)
+# Queue
 
 Na ciência da computação, uma **fila** é um tipo particular de abstração
 de tipo de dado ou coleção em que as entidades na coleção são mantidas em
@@ -22,7 +22,13 @@ Representação de uma file FIFO (first in, first out)
 
 ![Queue](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
 
-## References
+# Stack
 
-- [Wikipedia](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
-- [YouTube](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&index=3&)
+Em ciência da computação, uma **pilha** é um tipo abstrato de dado e estrutura de dados baseado no princípio de *Last In First Out* *(LIFO)*, ou seja "o último que entra é o primeiro que sai" caracterizando um empilhamento de dados. Pilhas são fundamentalmente compostas por duas operações: *push* (empilhar) que adiciona um elemento no topo da pilha e *pop* (desempilhar) que remove o último elemento adicionado.
+
+![Stack](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lifo_stack.svg/350px-Lifo_stack.svg.png)
+
+## Referências
+
+- [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+- [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))

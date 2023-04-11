@@ -1,133 +1,89 @@
-"""
-    Faz a representação de um elemento na lista ligada.
-
-    Cada elemento (aqui chamado de nó) terá seu valor representado como inteiro e um apontamento para o próximo elemento da lista.
-
-    Keyword arguments:
-    value -- valor do elemento
-"""
 class Node:
     def __init__(self, value):
         self.value = value
         self.next = None
 
-    def printNode(self):
+    def print_node(self):
         print(self.value)
 
 
-"""
-    Faz a representação da lista ligada.
-"""
 class LinkedList:
     def __init__(self):
-        self.firstNode = None
+        self.first_node = None
 
-    """
-        Insere o elemento no início da lista.
-
-        Cria um novo nó para inserção na lista
-        Faz o apontamento do atributo next da classe recém criada para o valor do primeiro nó da lista ligada
-        Altera o valor do primeiro nó da lista ligada com o valor do nó recém criado
-
-        Keyword arguments:
-        value -- valor do elemento a ser inserido na lista
-    """
-    def insertBeginning(self, value):
+    def insert_beginning(self, value):
         node = Node(value)
-        node.next = self.firstNode
-        self.firstNode = node
+        node.next = self.first_node
+        self.first_node = node
 
-    """
-        Faz a exibição do valor do nó corrente.
-    """
     def show(self):
-        if self.firstNode == None:
-            print('A lista está vazia')
+        if self.first_node is None:
             return None
 
-        currentNode = self.firstNode
-        while currentNode != None:
-            currentNode.printNode()
-            currentNode = currentNode.next
+        current_node = self.first_node
+        while current_node is not None:
+            current_node.print_node()
+            current_node = current_node.next
 
-    """
-        Faz a busca de um elemento lista.
-
-        Keyword arguments:
-        value -- valor do elemento a ser buscado na lista
-    """
     def search(self, value):
-        if self.firstNode == None:
+        if self.first_node is None:
             print('A lista está vazia')
             return None
 
-        currentNode = self.firstNode
-        while currentNode.value != value:
-            if currentNode.next == None:
+        current_node = self.first_node
+        while current_node.value != value:
+            if current_node.next is None:
                 return None
 
-            currentNode = currentNode.next
-        return currentNode
+            current_node = current_node.next
+        return current_node
 
-    """
-        Deleta um elemento do começo da lista.
-        Guarda o valor do primeiro nó em uma váriavel temporária (apenas para exibição do elemento excluído)
-
-        Altera o apontamento do primeiro nó da lista para o seu sucessor
-    """
-    def deleteBeginning(self):
-        if self.firstNode == None:
+    def delete_beginning(self):
+        if self.first_node is None:
             print('A lista está vazia')
             return None
 
-        temp = self.firstNode
-        self.firstNode = self.firstNode.next
+        temp = self.first_node
+        self.first_node = self.first_node.next
         return temp
 
 
-    """
-        Deleta um elemento da lista de acordo com seu valor.
-        Para excluir um elemento de uma lista ligada, primeiro precisamos encontrar o elemento. Desta forma iremos percerror todos os elementos da lista até encontrarmos o elemento desejado
-
-        Keyword arguments:
-        value -- valor a ser excluído da lista
-    """
-    def deleteAtPosition(self, value):
-        if self.firstNode == None:
+    def delete_at_position(self, value):
+        if self.first_node is None:
             print('A lista está vazia')
             return None
 
-        currentNode = self.firstNode
-        previousNode = self.firstNode
+        current_node = self.first_node
+        previous_node = self.first_node
 
-        while currentNode.value != value:
-            if currentNode.next == None:
+        while current_node.value != value:
+            if current_node.next is None:
                 return None
 
-            previousNode = currentNode
-            currentNode = currentNode.next
+            previous_node = current_node
+            current_node = current_node.next
 
-        if currentNode == self.firstNode:
-            self.firstNode = self.firstNode.next
+        if current_node == self.first_node:
+            self.first_node = self.first_node.next
         else:
-            previousNode.next = currentNode.next
+            previous_node.next = current_node.next
 
-        return currentNode
+        return current_node
 
-# Testes
+# Test
 linkedList = LinkedList()
-linkedList.insertBeginning(1)
-linkedList.insertBeginning(2)
-linkedList.insertBeginning(3)
-linkedList.insertBeginning(4)
-linkedList.insertBeginning(5)
+linkedList.insert_beginning(1)
+linkedList.insert_beginning(2)
+linkedList.insert_beginning(3)
+linkedList.insert_beginning(4)
+linkedList.insert_beginning(5)
 linkedList.show()
 
 # print("---------")
 # pesquisa = linkedList.search(3)
-# pesquisa.printNode()
+# pesquisa.print_node()
 
 print("---------")
-linkedList.deleteBeginning()
+linkedList.delete_beginning()
 linkedList.show()
-linkedList.deleteAtPosition(3)
+linkedList.delete_at_position(3)
