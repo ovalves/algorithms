@@ -17,7 +17,7 @@ valores, as relações entre eles e as funções ou operações que podem ser ap
 * [Hash Table](src/data-structures/hashtables)
 * [Linked List](src/data-structures/lists/linked-list/singly)
 * [Doubly Linked List](src/data-structures/lists/linked-list/doubly)
-* [Queue](src/data-structures/queue)
+* [Stacks & Queue](src/data-structures/stacks-queue)
 
 ## Algoritmos
 
@@ -58,6 +58,7 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * [Reverse Words In a String](src/problems/reverse-words-in-a-string)
   * [Min Stack](src/problems/min-stack)
   * [Transpose Matrix](src/problems/transpose-matrix)
+  * [First Recurring Character](src/problems/first-recurring-character)
   * [Two Sum](src/problems/two-sum)
   * [Best Time to Buy and Sell Stock II](src/problems/best-time-to-buy-sell-stock)
   * [Combination Sum IV](src/problems/combination-sum-iv)
