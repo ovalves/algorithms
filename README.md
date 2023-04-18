@@ -18,6 +18,7 @@ valores, as relações entre eles e as funções ou operações que podem ser ap
 * [Linked List](src/data-structures/lists/linked-list/singly)
 * [Doubly Linked List](src/data-structures/lists/linked-list/doubly)
 * [Stacks & Queue](src/data-structures/stacks-queue)
+* [Trees](src/data-structures/trees)
 
 ## Algoritmos
 
