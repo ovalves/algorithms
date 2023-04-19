@@ -49,6 +49,12 @@ class BinarySearchTree:
             print(f'↳ {root.value}')
             self.in_order(root.right)
 
+    def get_min(self, root: Union[Node, None]) -> int:
+        return root.value if root.left is None else self.get_min(root.left)
+
+    def get_max(self, root: Union[Node, None]) -> int:
+        return root.value if root.right is None else self.get_max(root.right)
+
     def print_tree(self, root: Union[Node, None], level=0) -> None:
         if root is not None:
             self.print_tree(root.right, level + 1)
@@ -64,9 +70,13 @@ node = tree.insert(node, 20)
 node = tree.insert(node, 170)
 node = tree.insert(node, 15)
 node = tree.insert(node, 1)
-print(tree.exists(node, 20)) # True
-print(tree.search(node, 3)) # None
-print(tree.search(node, 170)) # 170
+print("Exists(20): " + str(tree.exists(node, 20))) # True
+print("Search(3): " + str(tree.search(node, 3))) # None
+print("Search(170) : " + str(tree.search(node, 170))) # 170
+print("Min: " + str(tree.get_min(node))) # 1
+print("Max: " + str(tree.get_max(node))) # 170
+
+print("\nIn Order")
 tree.in_order(node)
 # ↳ 1
 # ↳ 4
@@ -76,6 +86,7 @@ tree.in_order(node)
 # ↳ 20
 # ↳ 170
 
+print("\nTree")
 tree.print_tree(node)
 #         170↢
 #     20↢
