@@ -176,4 +176,3 @@ Fonte: [Notação Big-O dicas](http://bigocheatsheet.com/).
 - [Estruturas de dados e algoritmos no YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
 - [Estrutura de Dados e Algoritmos em JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.md)
 - [Latency numbers every programmer should know](https://gist.github.com/hellerbarde/2843375)
->>>>>>> Stashed changes
