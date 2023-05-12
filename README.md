@@ -140,77 +140,35 @@ Fonte: [Notação Big-O dicas](http://bigocheatsheet.com/).
 | **Counting sort**     | O(n + r)         | O(n + r)                        | O(n + r)                  | n + r     | Sim     |
 | **Radix sort**        | O(n * k)         | O(n * k)                        | O(n * k)                  | n + k     | Sim     |
 
-## Latency numbers every programmer should know
-
-```
-Latency Comparison Numbers
---------------------------
-L1 cache reference                           0.5 ns
-Branch mispredict                            5   ns
-L2 cache reference                           7   ns                      14x L1 cache
-Mutex lock/unlock                           25   ns
-Main memory reference                      100   ns                      20x L2 cache, 200x L1 cache
-Compress 1K bytes with Zippy            10,000   ns       10 us
-Send 1 KB bytes over 1 Gbps network     10,000   ns       10 us
-Read 4 KB randomly from SSD*           150,000   ns      150 us          ~1GB/sec SSD
-Read 1 MB sequentially from memory     250,000   ns      250 us
-Round trip within same datacenter      500,000   ns      500 us
-Read 1 MB sequentially from SSD*     1,000,000   ns    1,000 us    1 ms  ~1GB/sec SSD, 4X memory
-HDD seek                            10,000,000   ns   10,000 us   10 ms  20x datacenter roundtrip
-Read 1 MB sequentially from 1 Gbps  10,000,000   ns   10,000 us   10 ms  40x memory, 10X SSD
-Read 1 MB sequentially from HDD     30,000,000   ns   30,000 us   30 ms 120x memory, 30X SSD
-Send packet CA->Netherlands->CA    150,000,000   ns  150,000 us  150 ms
-
-Notes
------
-1 ns = 10^-9 seconds
-1 us = 10^-6 seconds = 1,000 ns
-1 ms = 10^-3 seconds = 1,000 us = 1,000,000 ns
-```
-
-Handy metrics based on numbers above:
-
-* Read sequentially from HDD at 30 MB/s
-* Read sequentially from 1 Gbps Ethernet at 100 MB/s
-* Read sequentially from SSD at 1 GB/s
-* Read sequentially from main memory at 4 GB/s
-* 6-7 world-wide round trips per second
-* 2,000 round trips per second within a data center
-
-### Latency numbers visualized
-
+## Números de latência
 ![](assets/latency_numbers.png)
 
 ## Técnicas para resolução de problemas
-- When you got the problem, write down the key points at the top (i.e. sorted array). Make sure you have all the details.
-- Make sure you double check: What are the inputs? What are the outputs?
-- What is the most important value of the problem? Do you have time, and space and memory, etc.. What is the main goal?
-- Start with the naive/brute force approach. First thing that comes into mind. It shows that you’re able to think well and critically (you don't need to write this code, just speak about it)
-- Tell them why this approach is not the best (i.e. O(n^2) or higher, not readable, etc...)
-- Start actually writing your code now. Keep in mind that the more you prepare and understand
-what you need to code, the better the whiteboard will go. So never start a whiteboard
-interview not being sure of how things are going to work out. That is a recipe for disaster.
-- Test your code: Check for no params, 0, undefined, null, massive arrays, async code, etc
+- Quando você receber o problema, anote os pontos chave do problema. Certifique-se de ter todos os detalhes.
+- Certifique-se de verificar duas vezes: Quais são as entradas? Quais são as saídas?
+- Qual é o valor mais importante do problema? Você tem tempo, espaço e memória, etc. Qual é o objetivo principal?
+- Comece com a abordagem ingênua/bruta. Primeira coisa que vem à mente. Isso mostra que você é capaz de pensar bem e criticamente (você não precisa escrever este código, apenas fale sobre ele).
+- Diga por que essa abordagem não é a melhor (ou seja, O(n^2) ou mais, não legível, etc...)
+- Comece realmente a escrever seu código agora. Lembre-se de que quanto mais você se preparar e entender o que precisa codificar, melhor será a entrevista na lousa. Então, nunca comece uma entrevista na lousa sem ter certeza de como as coisas vão funcionar. Isso é uma receita para o desastre.
+- Teste seu código: verifique sem parâmetros, 0, indefinido, nulo, matrizes enormes, código assíncrono, etc.
 
-## Good code checklist:
-- [✅] It works
-- [✅] Good use of data structures
-- [✅] Code Re-use/ Do Not Repeat Yourself
-- [✅] Modular - makes code more readable, maintainable and testable
-- [✅] Less than O(N^2). We want to avoid nested loops if we can since they are expensive. Two separate loops are better than 2 nested loops
-- [✅] Low Space Complexity --> Recursion can cause stack overflow, copying of large arrays may
-exceed memory of machine
+## Checklist de um bom código:
+- [✅] Bom uso de estruturas de dados
+- [✅] Reutilização de código / Não repita a si mesmo
+- [✅] Modular - torna o código mais legível, mantível e testável
+- [✅] Menos que O(N^2). Queremos evitar loops aninhados se pudermos, pois eles são ruins. Dois loops separados são melhores do que 2 loops aninhados
+- [✅] Baixa Complexidade de Espaço --> A recursão pode causar estouro de pilha, a cópia de arrays grandes pode exceder a memória da máquina.
 
-## Heurestics to solve coding problems:
-- [✅] Hash Maps are usually the answer to improve Time Complexity
-- [✅] If it's a sorted array, use Binary tree to achieve O(log N). Divide and Conquer - Divide a data set
-into smaller chunks and then repeating a process with a subset of data. Binary search is a great example of this
-- [✅] Try Sorting your input
-- [✅] Hash tables and precomputed information (i.e. sorted) are some of the best ways to optimize your code
-- [✅] Look at the Time vs Space tradeoff. Sometimes storing extra state in memory can help the time.
-- [✅] Space time tradeoffs: Hashtables usually solve this a lot of the times. You use more space, but you
-can get a time optimization to the process. In programming, you often times can use up a little bit more space to get faster time
+## Heurísticas para resolver problemas de codificação:
+- [✅] Hash Maps geralmente são a resposta para melhorar a Complexidade de Tempo
+- [✅] Se for um array ordenado, use uma árvore binária para alcançar O(log N). Dividir e Conquistar - Divida um conjunto de dados em pedaços menores e repita um processo com um subconjunto de dados. A pesquisa binária é um ótimo exemplo disso
+- [✅] Tente ordenar a entrada dos dados
+- [✅] Hash tables e informações pré-computadas (ou seja, ordenadas) são algumas das melhores maneiras de otimizar seu código
+- [✅] Pense sobre Complexidade de Tempo vs Complexidade de Espaço. Às vezes, armazenar um estado extra na memória pode ajudar no tempo.
+- [✅] Space time tradeoffs: Hash tables geralmente resolvem isso na maioria das vezes. Você usa mais espaço, mas pode obter uma otimização de tempo para o processo.
 
+## Algorithms
+![](assets/algorithms.png)
 
 ### Referências
 
