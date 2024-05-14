@@ -68,6 +68,7 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * [Move Zeroes](src/problems/move-zeroes)
   * [Rotate Array](src/problems/rotate-array)
   * [Container With Most Water](src/problems/container-with-most-water)
+  * [Trapping Rain Water](src/problems/trapping-rain-water)
 
 ## Técnicas usadas
 
