@@ -67,6 +67,7 @@ um conjunto de regras que define precisamente uma sequência de operações.
   * [Contains Duplicate](src/problems/contains-duplicate)
   * [Move Zeroes](src/problems/move-zeroes)
   * [Rotate Array](src/problems/rotate-array)
+  * [Container With Most Water](src/problems/container-with-most-water)
 
 ## Técnicas usadas
 
