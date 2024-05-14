@@ -39,8 +39,6 @@ Constraints:
 ## Solution
 > Language: Python
 
-[Two-pointer technique](https://leetcode.com/articles/two-pointer-technique)
-
 ```python
 
 ```
